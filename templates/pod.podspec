@@ -3,15 +3,18 @@ Pod::Spec.new do |s|
   s.name         = "__ProjectName__"
   #发版版本号，每更新一次代码就改变一次版本号
   s.version      = "1"
+  #一个简单的总结，随便写
   s.summary      = "__ProjectName__."
   #描述，随便写 但是要比 s.summary 长度长
   s.description  = <<-DESC
                     this is __ProjectName__
                    DESC
 
+  #你的 git 仓库首页的网页 url，注意并不是 https/ssh这种代码仓库地址
   s.homepage     = "__HomePage__"
-  # s.license      = "MIT (example)"
+  #license
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #作者
   s.author             = { "JuneCheng" => "755038283@qq.com" }
   #一定要写上，不写的话，执行 pod lib lint 验证项目的时候会报找不到 UIKIT 等框架错误
   s.platform     = :ios, "8.0"
